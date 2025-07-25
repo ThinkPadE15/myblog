@@ -1,4 +1,4 @@
-baseURL = "http://localhost/"
+baseURL = "https://ThinkPadE15.github.io/myblog/"
 languageCode = "en-us"
 title = "M. Shatananda Sharma's Blog"
 theme = "PaperMod"
