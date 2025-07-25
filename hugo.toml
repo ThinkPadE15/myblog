@@ -2,6 +2,7 @@ baseURL = "https://ThinkPadE15.github.io/myblog/"
 languageCode = "en-us"
 title = "M. Shatananda Sharma's Blog"
 theme = "PaperMod"
+
 [pagination]
   pagerSize = 10
 
