@@ -1,28 +1,18 @@
-baseURL = "https://ThinkPadE15.github.io/myblog/"
+baseURL = "https://thinkpade15.github.io/myblog/"
 languageCode = "en-us"
 title = "M. Shatananda Sharma's Blog"
 theme = "PaperMod"
 
-[pagination]
-  pagerSize = 10
-
 [params]
-  author = "M. Shatananda Sharma"
-  description = "Thoughts, Blogs, and Essays"
   ShowReadingTime = true
-  ShowShareButtons = true
-  ShowPostNavLinks = true
-  ShowCodeCopyButtons = true
-  defaultTheme = "auto"
 
-[[menu.main]]
-  identifier = "about"
-  name = "About"
-  url = "/about/"
-  weight = 10
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
 
-[[menu.main]]
-  identifier = "posts"
-  name = "Posts"
-  url = "/posts/"
-  weight = 5
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 2
