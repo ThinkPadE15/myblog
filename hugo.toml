@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 baseURL = "https://thinkpade15.github.io/myblog/"
+=======
+baseURL = "https://ThinkPadE15.github.io/myblog/"
+>>>>>>> ec00306 (Deploy Hugo site to GitHub Pages)
 languageCode = "en-us"
 title = "M. Shatananda Sharma's Blog"
 theme = "PaperMod"
