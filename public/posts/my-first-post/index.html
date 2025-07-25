@@ -1,11 +1,334 @@
-<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Tracing History Through Numbers | M. Shatananda Sharma's Blog</title><meta name=keywords content><meta name=description content="Using KL Divergence to Decode Ancient Scripts"><meta name=author content><link rel=canonical href=https://thinkpade15.github.io/myblog/posts/my-first-post/><link crossorigin=anonymous href=/myblog/assets/css/stylesheet.36819bea596090d8b48cf10d9831382996197aa7e4fc86f792f7c08c9ca4d23b.css integrity="sha256-NoGb6llgkNi0jPENmDE4KZYZeqfk/Ib3kvfAjJyk0js=" rel="preload stylesheet" as=style><link rel=icon href=https://thinkpade15.github.io/myblog/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://thinkpade15.github.io/myblog/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://thinkpade15.github.io/myblog/favicon-32x32.png><link rel=apple-touch-icon href=https://thinkpade15.github.io/myblog/apple-touch-icon.png><link rel=mask-icon href=https://thinkpade15.github.io/myblog/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=en href=https://thinkpade15.github.io/myblog/posts/my-first-post/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><meta property="og:url" content="https://thinkpade15.github.io/myblog/posts/my-first-post/"><meta property="og:site_name" content="M. Shatananda Sharma's Blog"><meta property="og:title" content="Tracing History Through Numbers"><meta property="og:description" content="Using KL Divergence to Decode Ancient Scripts"><meta property="og:locale" content="en-us"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2025-07-25T17:28:13+05:30"><meta property="article:modified_time" content="2025-07-25T17:28:13+05:30"><meta name=twitter:card content="summary"><meta name=twitter:title content="Tracing History Through Numbers"><meta name=twitter:description content="Using KL Divergence to Decode Ancient Scripts"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://thinkpade15.github.io/myblog/posts/"},{"@type":"ListItem","position":2,"name":"Tracing History Through Numbers","item":"https://thinkpade15.github.io/myblog/posts/my-first-post/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Tracing History Through Numbers","name":"Tracing History Through Numbers","description":"Using KL Divergence to Decode Ancient Scripts","keywords":[],"articleBody":"Read this thread to understand the context of the researcher: Here\nAnd these as well for more context: Here and Here\nIndus Script Corpus: Here\nUnderstanding ancient scripts is like opening a time capsule into history. The Indus Valley Script (IVS), one of the world’s oldest writing systems, remains undeciphered, leaving a significant gap in our knowledge of early Indian civilization.\nRecently, a cryptographer named Yagnadevam claimed to decipher the ancient text as a cryptogram and proposed that the IVS might be linked to Sanskrit, one of the oldest known languages.\nTo explore this, they turned to a mathematical tool called KL divergence, which measures differences between patterns, such as sound frequencies in texts.\nBut can KL divergence prove that IVS is related to Sanskrit?\nWhat is KL Divergence? KL divergence is a statistical measure that compares two distributions, it tells us how different two sets of data are. For example, if one city prefers biryani and another prefers chocolate, KL divergence can quantify that difference.\nMathematically: KL divergence here compares the frequency of sounds or symbols in one text with another, It focuses on sound patterns but ignores grammar, syntax, and meaning—key aspects of language. For example, researchers might compare how often certain sounds appear in the Ṛgveda (an ancient Sanskrit text) and IVS. If the frequencies are similar, it could suggest a connection, but more linguistic evidence beyond phonetics is needed, such as analyzing grammatical structures, syntax, and semantics\nHistorical Application to the Indus Valley Script (IVS) The Problem The Indus Valley script consists of mysterious symbols. There is no agreed-upon translation. Some researchers theorize it may be an early or transitional form of Sanskrit.\nHow KL Divergence Is Used Researchers calculate the frequency of symbols in IVS and compare it to Sanskrit texts like the Ṛgveda.\nThey also compare it to unrelated languages like English to see how different they are.\nThe diagonal values (e.g., Ṛgveda to Ṛgveda) are zero because any text compared to itself has no divergence.\nIVT has a KL divergence of ~0.7 with the Ṛgveda, indicating some similarity but not close enough to be identical.\nClassical Sanskrit texts (Ṛgveda, Manusmṛti, etc.) show extremely low KL divergence between each other (~0.05 or less), meaning they are closely related.\nIVT’s divergence with unrelated English texts (e.g., “Moby Dick”) is ~3.5, far higher than its divergence with Sanskrit.\nIVT is not Sanskrit, as its divergence from classical Sanskrit texts is far higher than their mutual divergence. This is based on the Phonetics alone\nHowever, IVT models Sanskrit better than unrelated texts like the “Lorem Ipsum” model English, which shows it has some phonetic resemblance.\nHeatmap Analysis Red means IVT underuses a sound compared to Ṛgveda, blue means overuses, and whiteish means it has ~ the same frequency.\nFrequency ratios of sounds (akṣaras) in IVT compared to the Ṛgveda (left heatmap) and another Sanskrit text (Śatapathabrāhmaṇa, right heatmap).\nDarker or brighter colors represent higher deviations in phoneme frequencies.\nLeft Heatmap (IVT vs Ṛgveda):\nSignificant differences in certain phonemes (e.g., “ā,” “ai,” and “au”) indicate that IVT doesn’t fully align with Ṛgveda’s phonetic patterns.\nRight Heatmap (Śatapathabrāhmaṇa vs Ṛgveda):\nMuch smaller variations, as expected, since these are both classical Sanskrit texts.\nFindings IVT’s phonetic structure differs significantly from the Ṛgveda and other classical Sanskrit texts, further suggesting it is not Sanskrit.\nHowever, its phoneme patterns suggest some familiarity with Sanskrit’s phonetic traditions, supporting the idea that it may represent an early or transitional form.\nStrengths of KL Divergence in Historical Analysis Objectivity: It gives a quantitative way to compare languages, reducing bias.\nPhonetic Insight: Highlights patterns in sound usage, which can reveal linguistic relationships.\nApplicability: Works even with limited data, like the sparse symbols in IVS.\nLimitations of KL Divergence Directionality: KL divergence depends on which language is the reference, potentially biasing results.\nPhonetics Only: It looks at sound frequencies but ignores syntax, grammar, and meaning—critical for language identification.\nHistorical Evolution: Sanskrit evolved over the centuries. If IVS reflects an earlier or transitional stage, its differences could simply reflect this evolution.\nOversimplification: Language relationships are complex, and reducing them to symbol frequencies may miss deeper connections.\nWhat Does This All Mean? Does KL divergence prove IVS is related to Sanskrit? The answer isn’t clear-cut.\nIf IVS Is Linked to Sanskrit IVS may represent an early or transitional stage of Sanskrit, explaining phonetic differences.\nA deeper analysis, including grammar and semantics, could strengthen this theory.\nIf IVS Is Not Linked to Sanskrit The differences in phonetics might reflect a completely different language family.\nOther tools, like syntax analysis or archaeological evidence, are needed to uncover IVS’s origins.\nKL divergence is a powerful tool that offers insights into phonetic similarities between texts, but it has limitations. While it suggests some overlap between IVS and Sanskrit, it cannot conclusively prove a connection.\nThe importance of deciphering the Indus Valley script goes beyond linguistics, it could reshape our understanding of ancient history. What other tools or methods might help bridge this gap between symbols and meaning?\nImage Credits and Acknowledgment The images included in this post are sourced from @khoomeik, and full credit goes to their original creator, Rohan Pandey . These visuals have been used for illustrative purposes to support the ideas discussed in this article. If you are the rightful owner of any of these images and have concerns about their use, please feel free to contact me, and I will address the matter promptly, including removing the images if necessary.\nJai Hind\n","wordCount":"913","inLanguage":"en","datePublished":"2025-07-25T17:28:13+05:30","dateModified":"2025-07-25T17:28:13+05:30","mainEntityOfPage":{"@type":"WebPage","@id":"https://thinkpade15.github.io/myblog/posts/my-first-post/"},"publisher":{"@type":"Organization","name":"M. Shatananda Sharma's Blog","logo":{"@type":"ImageObject","url":"https://thinkpade15.github.io/myblog/favicon.ico"}}}</script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://thinkpade15.github.io/myblog/ accesskey=h title="M. Shatananda Sharma's Blog (Alt + H)">M. Shatananda Sharma's Blog</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme">
-<svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
-<svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://thinkpade15.github.io/myblog/ title=Home><span>Home</span></a></li><li><a href=https://thinkpade15.github.io/myblog/posts/ title=Posts><span>Posts</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><h1 class="post-title entry-hint-parent">Tracing History Through Numbers</h1><div class=post-description>Using KL Divergence to Decode Ancient Scripts</div><div class=post-meta><span title='2025-07-25 17:28:13 +0530 IST'>July 25, 2025</span>&nbsp;·&nbsp;5 min</div></header><div class=post-content><p><strong>Read this thread to understand the context of the researcher:</strong> <a href=https://x.com/khoomeik/status/1882058141145403817>Here</a><br><strong>And these as well for more context:</strong> <a href=https://x.com/TheButterThief/status/1882625712705909091>Here</a> and <a href=https://x.com/yajnadevam/status/1882119943539556464>Here</a></p><p><strong>Indus Script Corpus:</strong> <a href=https://indusscript.net/>Here</a></p><hr><p>Understanding ancient scripts is like opening a time capsule into history. The Indus Valley Script (IVS), one of the world’s oldest writing systems, remains undeciphered, leaving a significant gap in our knowledge of early Indian civilization.</p><p>Recently, a cryptographer named Yagnadevam claimed to decipher the ancient text as a cryptogram and proposed that the IVS might be linked to Sanskrit, one of the oldest known languages.</p><p>To explore this, they turned to a mathematical tool called KL divergence, which measures differences between patterns, such as sound frequencies in texts.</p><p>But can KL divergence prove that IVS is related to Sanskrit?</p><hr><h2 id=what-is-kl-divergence>What is KL Divergence?<a hidden class=anchor aria-hidden=true href=#what-is-kl-divergence>#</a></h2><p>KL divergence is a statistical measure that compares two distributions, it tells us how different two sets of data are. For example, if one city prefers biryani and another prefers chocolate, KL divergence can quantify that difference.</p><p><strong>Mathematically:</strong>
-<img alt=Mathematically loading=lazy src=/images/pic1.webp></p><p>KL divergence here compares the frequency of sounds or symbols in one text with another, It focuses on sound patterns but ignores grammar, syntax, and meaning—key aspects of language. For example, researchers might compare how often certain sounds appear in the Ṛgveda (an ancient Sanskrit text) and IVS. If the frequencies are similar, it could suggest a connection, but more linguistic evidence beyond phonetics is needed, such as analyzing grammatical structures, syntax, and semantics</p><h2 id=historical-application-to-the-indus-valley-script-ivs>Historical Application to the Indus Valley Script (IVS)<a hidden class=anchor aria-hidden=true href=#historical-application-to-the-indus-valley-script-ivs>#</a></h2><h3 id=the-problem>The Problem<a hidden class=anchor aria-hidden=true href=#the-problem>#</a></h3><p>The Indus Valley script consists of mysterious symbols. There is no agreed-upon translation. Some researchers theorize it may be an early or transitional form of Sanskrit.</p><h3 id=how-kl-divergence-is-used>How KL Divergence Is Used<a hidden class=anchor aria-hidden=true href=#how-kl-divergence-is-used>#</a></h3><p>Researchers calculate the frequency of symbols in IVS and compare it to Sanskrit texts like the Ṛgveda.</p><p>They also compare it to unrelated languages like English to see how different they are.</p><p><img alt=KL loading=lazy src=/images/pic2.webp></p><p>The diagonal values (e.g., Ṛgveda to Ṛgveda) are zero because any text compared to itself has no divergence.</p><p>IVT has a KL divergence of ~0.7 with the Ṛgveda, indicating some similarity but not close enough to be identical.</p><p>Classical Sanskrit texts (Ṛgveda, Manusmṛti, etc.) show extremely low KL divergence between each other (~0.05 or less), meaning they are closely related.</p><p>IVT&rsquo;s divergence with unrelated English texts (e.g., &ldquo;Moby Dick&rdquo;) is ~3.5, far higher than its divergence with Sanskrit.</p><p>IVT is not Sanskrit, as its divergence from classical Sanskrit texts is far higher than their mutual divergence. This is based on the Phonetics alone</p><p>However, IVT models Sanskrit better than unrelated texts like the &ldquo;Lorem Ipsum&rdquo; model English, which shows it has some phonetic resemblance.</p><p><img alt=Heatmap loading=lazy src=/images/pic3.webp></p><h3 id=heatmap-analysis>Heatmap Analysis<a hidden class=anchor aria-hidden=true href=#heatmap-analysis>#</a></h3><p>Red means IVT underuses a sound compared to Ṛgveda, blue means overuses, and whiteish means it has ~ the same frequency.</p><p>Frequency ratios of sounds (akṣaras) in IVT compared to the Ṛgveda (left heatmap) and another Sanskrit text (Śatapathabrāhmaṇa, right heatmap).</p><p>Darker or brighter colors represent higher deviations in phoneme frequencies.</p><p>Left Heatmap (IVT vs Ṛgveda):</p><p>Significant differences in certain phonemes (e.g., &ldquo;ā,&rdquo; &ldquo;ai,&rdquo; and &ldquo;au&rdquo;) indicate that IVT doesn’t fully align with Ṛgveda&rsquo;s phonetic patterns.</p><p>Right Heatmap (Śatapathabrāhmaṇa vs Ṛgveda):</p><p>Much smaller variations, as expected, since these are both classical Sanskrit texts.</p><h3 id=findings>Findings<a hidden class=anchor aria-hidden=true href=#findings>#</a></h3><p>IVT’s phonetic structure differs significantly from the Ṛgveda and other classical Sanskrit texts, further suggesting it is not Sanskrit.</p><p>However, its phoneme patterns suggest some familiarity with Sanskrit&rsquo;s phonetic traditions, supporting the idea that it may represent an early or transitional form.</p><h3 id=strengths-of-kl-divergence-in-historical-analysis>Strengths of KL Divergence in Historical Analysis<a hidden class=anchor aria-hidden=true href=#strengths-of-kl-divergence-in-historical-analysis>#</a></h3><p>Objectivity: It gives a quantitative way to compare languages, reducing bias.</p><p>Phonetic Insight: Highlights patterns in sound usage, which can reveal linguistic relationships.</p><p>Applicability: Works even with limited data, like the sparse symbols in IVS.</p><h3 id=limitations-of-kl-divergence>Limitations of KL Divergence<a hidden class=anchor aria-hidden=true href=#limitations-of-kl-divergence>#</a></h3><p>Directionality: KL divergence depends on which language is the reference, potentially biasing results.</p><p>Phonetics Only: It looks at sound frequencies but ignores syntax, grammar, and meaning—critical for language identification.</p><p>Historical Evolution: Sanskrit evolved over the centuries. If IVS reflects an earlier or transitional stage, its differences could simply reflect this evolution.</p><p>Oversimplification: Language relationships are complex, and reducing them to symbol frequencies may miss deeper connections.</p><h3 id=what-does-this-all-mean>What Does This All Mean?<a hidden class=anchor aria-hidden=true href=#what-does-this-all-mean>#</a></h3><p>Does KL divergence prove IVS is related to Sanskrit? The answer isn’t clear-cut.</p><p>If IVS Is Linked to Sanskrit
-IVS may represent an early or transitional stage of Sanskrit, explaining phonetic differences.</p><p>A deeper analysis, including grammar and semantics, could strengthen this theory.</p><p>If IVS Is Not Linked to Sanskrit
-The differences in phonetics might reflect a completely different language family.</p><p>Other tools, like syntax analysis or archaeological evidence, are needed to uncover IVS’s origins.</p><p>KL divergence is a powerful tool that offers insights into phonetic similarities between texts, but it has limitations. While it suggests some overlap between IVS and Sanskrit, it cannot conclusively prove a connection.</p><p>The importance of deciphering the Indus Valley script goes beyond linguistics, it could reshape our understanding of ancient history. What other tools or methods might help bridge this gap between symbols and meaning?</p><p>Image Credits and Acknowledgment
-The images included in this post are sourced from @khoomeik, and full credit goes to their original creator, Rohan Pandey . These visuals have been used for illustrative purposes to support the ideas discussed in this article. If you are the rightful owner of any of these images and have concerns about their use, please feel free to contact me, and I will address the matter promptly, including removing the images if necessary.</p><p>Jai Hind</p></div><footer class=post-footer><ul class=post-tags></ul></footer></article></main><footer class=footer><span>&copy; 2025 <a href=https://thinkpade15.github.io/myblog/>M. Shatananda Sharma's Blog</a></span> ·
-<span>Powered by
-<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
-<a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentColor"><path d="M12 6H0l6-6z"/></svg>
-</a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Tracing History Through Numbers | M. Shatananda Sharma&#39;s Blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="Using KL Divergence to Decode Ancient Scripts">
+<meta name="author" content="">
+<link rel="canonical" href="https://thinkpade15.github.io/myblog/posts/my-first-post/">
+<link crossorigin="anonymous" href="/myblog/assets/css/stylesheet.36819bea596090d8b48cf10d9831382996197aa7e4fc86f792f7c08c9ca4d23b.css" integrity="sha256-NoGb6llgkNi0jPENmDE4KZYZeqfk/Ib3kvfAjJyk0js=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://thinkpade15.github.io/myblog/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://thinkpade15.github.io/myblog/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://thinkpade15.github.io/myblog/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://thinkpade15.github.io/myblog/apple-touch-icon.png">
+<link rel="mask-icon" href="https://thinkpade15.github.io/myblog/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://thinkpade15.github.io/myblog/posts/my-first-post/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:url" content="https://thinkpade15.github.io/myblog/posts/my-first-post/">
+  <meta property="og:site_name" content="M. Shatananda Sharma&#39;s Blog">
+  <meta property="og:title" content="Tracing History Through Numbers">
+  <meta property="og:description" content="Using KL Divergence to Decode Ancient Scripts">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-07-25T17:28:13+05:30">
+    <meta property="article:modified_time" content="2025-07-25T17:28:13+05:30">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Tracing History Through Numbers">
+<meta name="twitter:description" content="Using KL Divergence to Decode Ancient Scripts">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://thinkpade15.github.io/myblog/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Tracing History Through Numbers",
+      "item": "https://thinkpade15.github.io/myblog/posts/my-first-post/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Tracing History Through Numbers",
+  "name": "Tracing History Through Numbers",
+  "description": "Using KL Divergence to Decode Ancient Scripts",
+  "keywords": [
+    
+  ],
+  "articleBody": "Read this thread to understand the context of the researcher: Here\nAnd these as well for more context: Here and Here\nIndus Script Corpus: Here\nUnderstanding ancient scripts is like opening a time capsule into history. The Indus Valley Script (IVS), one of the world’s oldest writing systems, remains undeciphered, leaving a significant gap in our knowledge of early Indian civilization.\nRecently, a cryptographer named Yagnadevam claimed to decipher the ancient text as a cryptogram and proposed that the IVS might be linked to Sanskrit, one of the oldest known languages.\nTo explore this, they turned to a mathematical tool called KL divergence, which measures differences between patterns, such as sound frequencies in texts.\nBut can KL divergence prove that IVS is related to Sanskrit?\nWhat is KL Divergence? KL divergence is a statistical measure that compares two distributions, it tells us how different two sets of data are. For example, if one city prefers biryani and another prefers chocolate, KL divergence can quantify that difference.\nMathematically: KL divergence here compares the frequency of sounds or symbols in one text with another, It focuses on sound patterns but ignores grammar, syntax, and meaning—key aspects of language. For example, researchers might compare how often certain sounds appear in the Ṛgveda (an ancient Sanskrit text) and IVS. If the frequencies are similar, it could suggest a connection, but more linguistic evidence beyond phonetics is needed, such as analyzing grammatical structures, syntax, and semantics\nHistorical Application to the Indus Valley Script (IVS) The Problem The Indus Valley script consists of mysterious symbols. There is no agreed-upon translation. Some researchers theorize it may be an early or transitional form of Sanskrit.\nHow KL Divergence Is Used Researchers calculate the frequency of symbols in IVS and compare it to Sanskrit texts like the Ṛgveda.\nThey also compare it to unrelated languages like English to see how different they are.\nThe diagonal values (e.g., Ṛgveda to Ṛgveda) are zero because any text compared to itself has no divergence.\nIVT has a KL divergence of ~0.7 with the Ṛgveda, indicating some similarity but not close enough to be identical.\nClassical Sanskrit texts (Ṛgveda, Manusmṛti, etc.) show extremely low KL divergence between each other (~0.05 or less), meaning they are closely related.\nIVT’s divergence with unrelated English texts (e.g., “Moby Dick”) is ~3.5, far higher than its divergence with Sanskrit.\nIVT is not Sanskrit, as its divergence from classical Sanskrit texts is far higher than their mutual divergence. This is based on the Phonetics alone\nHowever, IVT models Sanskrit better than unrelated texts like the “Lorem Ipsum” model English, which shows it has some phonetic resemblance.\nHeatmap Analysis Red means IVT underuses a sound compared to Ṛgveda, blue means overuses, and whiteish means it has ~ the same frequency.\nFrequency ratios of sounds (akṣaras) in IVT compared to the Ṛgveda (left heatmap) and another Sanskrit text (Śatapathabrāhmaṇa, right heatmap).\nDarker or brighter colors represent higher deviations in phoneme frequencies.\nLeft Heatmap (IVT vs Ṛgveda):\nSignificant differences in certain phonemes (e.g., “ā,” “ai,” and “au”) indicate that IVT doesn’t fully align with Ṛgveda’s phonetic patterns.\nRight Heatmap (Śatapathabrāhmaṇa vs Ṛgveda):\nMuch smaller variations, as expected, since these are both classical Sanskrit texts.\nFindings IVT’s phonetic structure differs significantly from the Ṛgveda and other classical Sanskrit texts, further suggesting it is not Sanskrit.\nHowever, its phoneme patterns suggest some familiarity with Sanskrit’s phonetic traditions, supporting the idea that it may represent an early or transitional form.\nStrengths of KL Divergence in Historical Analysis Objectivity: It gives a quantitative way to compare languages, reducing bias.\nPhonetic Insight: Highlights patterns in sound usage, which can reveal linguistic relationships.\nApplicability: Works even with limited data, like the sparse symbols in IVS.\nLimitations of KL Divergence Directionality: KL divergence depends on which language is the reference, potentially biasing results.\nPhonetics Only: It looks at sound frequencies but ignores syntax, grammar, and meaning—critical for language identification.\nHistorical Evolution: Sanskrit evolved over the centuries. If IVS reflects an earlier or transitional stage, its differences could simply reflect this evolution.\nOversimplification: Language relationships are complex, and reducing them to symbol frequencies may miss deeper connections.\nWhat Does This All Mean? Does KL divergence prove IVS is related to Sanskrit? The answer isn’t clear-cut.\nIf IVS Is Linked to Sanskrit IVS may represent an early or transitional stage of Sanskrit, explaining phonetic differences.\nA deeper analysis, including grammar and semantics, could strengthen this theory.\nIf IVS Is Not Linked to Sanskrit The differences in phonetics might reflect a completely different language family.\nOther tools, like syntax analysis or archaeological evidence, are needed to uncover IVS’s origins.\nKL divergence is a powerful tool that offers insights into phonetic similarities between texts, but it has limitations. While it suggests some overlap between IVS and Sanskrit, it cannot conclusively prove a connection.\nThe importance of deciphering the Indus Valley script goes beyond linguistics, it could reshape our understanding of ancient history. What other tools or methods might help bridge this gap between symbols and meaning?\nImage Credits and Acknowledgment The images included in this post are sourced from @khoomeik, and full credit goes to their original creator, Rohan Pandey . These visuals have been used for illustrative purposes to support the ideas discussed in this article. If you are the rightful owner of any of these images and have concerns about their use, please feel free to contact me, and I will address the matter promptly, including removing the images if necessary.\nJai Hind\n",
+  "wordCount" : "913",
+  "inLanguage": "en",
+  "datePublished": "2025-07-25T17:28:13+05:30",
+  "dateModified": "2025-07-25T17:28:13+05:30",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://thinkpade15.github.io/myblog/posts/my-first-post/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "M. Shatananda Sharma's Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://thinkpade15.github.io/myblog/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://thinkpade15.github.io/myblog/" accesskey="h" title="M. Shatananda Sharma&#39;s Blog (Alt + H)">M. Shatananda Sharma&#39;s Blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://thinkpade15.github.io/myblog/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://thinkpade15.github.io/myblog/posts/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Tracing History Through Numbers
+    </h1>
+    <div class="post-description">
+      Using KL Divergence to Decode Ancient Scripts
+    </div>
+    <div class="post-meta"><span title='2025-07-25 17:28:13 +0530 IST'>July 25, 2025</span>&nbsp;·&nbsp;5 min
+
+</div>
+  </header> 
+  <div class="post-content"><p><strong>Read this thread to understand the context of the researcher:</strong> <a href="https://x.com/khoomeik/status/1882058141145403817">Here</a><br>
+<strong>And these as well for more context:</strong> <a href="https://x.com/TheButterThief/status/1882625712705909091">Here</a> and <a href="https://x.com/yajnadevam/status/1882119943539556464">Here</a></p>
+<p><strong>Indus Script Corpus:</strong> <a href="https://indusscript.net/">Here</a></p>
+<hr>
+<p>Understanding ancient scripts is like opening a time capsule into history. The Indus Valley Script (IVS), one of the world’s oldest writing systems, remains undeciphered, leaving a significant gap in our knowledge of early Indian civilization.</p>
+<p>Recently, a cryptographer named Yagnadevam claimed to decipher the ancient text as a cryptogram and proposed that the IVS might be linked to Sanskrit, one of the oldest known languages.</p>
+<p>To explore this, they turned to a mathematical tool called KL divergence, which measures differences between patterns, such as sound frequencies in texts.</p>
+<p>But can KL divergence prove that IVS is related to Sanskrit?</p>
+<hr>
+<h2 id="what-is-kl-divergence">What is KL Divergence?<a hidden class="anchor" aria-hidden="true" href="#what-is-kl-divergence">#</a></h2>
+<p>KL divergence is a statistical measure that compares two distributions, it tells us how different two sets of data are. For example, if one city prefers biryani and another prefers chocolate, KL divergence can quantify that difference.</p>
+<p><strong>Mathematically:</strong>
+<img alt="Mathematically" loading="lazy" src="/images/pic1.webp"></p>
+<p>KL divergence here compares the frequency of sounds or symbols in one text with another, It focuses on sound patterns but ignores grammar, syntax, and meaning—key aspects of language. For example, researchers might compare how often certain sounds appear in the Ṛgveda (an ancient Sanskrit text) and IVS. If the frequencies are similar, it could suggest a connection, but more linguistic evidence beyond phonetics is needed, such as analyzing grammatical structures, syntax, and semantics</p>
+<h2 id="historical-application-to-the-indus-valley-script-ivs">Historical Application to the Indus Valley Script (IVS)<a hidden class="anchor" aria-hidden="true" href="#historical-application-to-the-indus-valley-script-ivs">#</a></h2>
+<h3 id="the-problem">The Problem<a hidden class="anchor" aria-hidden="true" href="#the-problem">#</a></h3>
+<p>The Indus Valley script consists of mysterious symbols. There is no agreed-upon translation. Some researchers theorize it may be an early or transitional form of Sanskrit.</p>
+<h3 id="how-kl-divergence-is-used">How KL Divergence Is Used<a hidden class="anchor" aria-hidden="true" href="#how-kl-divergence-is-used">#</a></h3>
+<p>Researchers calculate the frequency of symbols in IVS and compare it to Sanskrit texts like the Ṛgveda.</p>
+<p>They also compare it to unrelated languages like English to see how different they are.</p>
+<p><img alt="KL" loading="lazy" src="/images/pic2.webp"></p>
+<p>The diagonal values (e.g., Ṛgveda to Ṛgveda) are zero because any text compared to itself has no divergence.</p>
+<p>IVT has a KL divergence of ~0.7 with the Ṛgveda, indicating some similarity but not close enough to be identical.</p>
+<p>Classical Sanskrit texts (Ṛgveda, Manusmṛti, etc.) show extremely low KL divergence between each other (~0.05 or less), meaning they are closely related.</p>
+<p>IVT&rsquo;s divergence with unrelated English texts (e.g., &ldquo;Moby Dick&rdquo;) is ~3.5, far higher than its divergence with Sanskrit.</p>
+<p>IVT is not Sanskrit, as its divergence from classical Sanskrit texts is far higher than their mutual divergence. This is based on the Phonetics alone</p>
+<p>However, IVT models Sanskrit better than unrelated texts like the &ldquo;Lorem Ipsum&rdquo; model English, which shows it has some phonetic resemblance.</p>
+<p><img alt="Heatmap" loading="lazy" src="/images/pic3.webp"></p>
+<h3 id="heatmap-analysis">Heatmap Analysis<a hidden class="anchor" aria-hidden="true" href="#heatmap-analysis">#</a></h3>
+<p>Red means IVT underuses a sound compared to Ṛgveda, blue means overuses, and whiteish means it has ~ the same frequency.</p>
+<p>Frequency ratios of sounds (akṣaras) in IVT compared to the Ṛgveda (left heatmap) and another Sanskrit text (Śatapathabrāhmaṇa, right heatmap).</p>
+<p>Darker or brighter colors represent higher deviations in phoneme frequencies.</p>
+<p>Left Heatmap (IVT vs Ṛgveda):</p>
+<p>Significant differences in certain phonemes (e.g., &ldquo;ā,&rdquo; &ldquo;ai,&rdquo; and &ldquo;au&rdquo;) indicate that IVT doesn’t fully align with Ṛgveda&rsquo;s phonetic patterns.</p>
+<p>Right Heatmap (Śatapathabrāhmaṇa vs Ṛgveda):</p>
+<p>Much smaller variations, as expected, since these are both classical Sanskrit texts.</p>
+<h3 id="findings">Findings<a hidden class="anchor" aria-hidden="true" href="#findings">#</a></h3>
+<p>IVT’s phonetic structure differs significantly from the Ṛgveda and other classical Sanskrit texts, further suggesting it is not Sanskrit.</p>
+<p>However, its phoneme patterns suggest some familiarity with Sanskrit&rsquo;s phonetic traditions, supporting the idea that it may represent an early or transitional form.</p>
+<h3 id="strengths-of-kl-divergence-in-historical-analysis">Strengths of KL Divergence in Historical Analysis<a hidden class="anchor" aria-hidden="true" href="#strengths-of-kl-divergence-in-historical-analysis">#</a></h3>
+<p>Objectivity: It gives a quantitative way to compare languages, reducing bias.</p>
+<p>Phonetic Insight: Highlights patterns in sound usage, which can reveal linguistic relationships.</p>
+<p>Applicability: Works even with limited data, like the sparse symbols in IVS.</p>
+<h3 id="limitations-of-kl-divergence">Limitations of KL Divergence<a hidden class="anchor" aria-hidden="true" href="#limitations-of-kl-divergence">#</a></h3>
+<p>Directionality: KL divergence depends on which language is the reference, potentially biasing results.</p>
+<p>Phonetics Only: It looks at sound frequencies but ignores syntax, grammar, and meaning—critical for language identification.</p>
+<p>Historical Evolution: Sanskrit evolved over the centuries. If IVS reflects an earlier or transitional stage, its differences could simply reflect this evolution.</p>
+<p>Oversimplification: Language relationships are complex, and reducing them to symbol frequencies may miss deeper connections.</p>
+<h3 id="what-does-this-all-mean">What Does This All Mean?<a hidden class="anchor" aria-hidden="true" href="#what-does-this-all-mean">#</a></h3>
+<p>Does KL divergence prove IVS is related to Sanskrit? The answer isn’t clear-cut.</p>
+<p>If IVS Is Linked to Sanskrit
+IVS may represent an early or transitional stage of Sanskrit, explaining phonetic differences.</p>
+<p>A deeper analysis, including grammar and semantics, could strengthen this theory.</p>
+<p>If IVS Is Not Linked to Sanskrit
+The differences in phonetics might reflect a completely different language family.</p>
+<p>Other tools, like syntax analysis or archaeological evidence, are needed to uncover IVS’s origins.</p>
+<p>KL divergence is a powerful tool that offers insights into phonetic similarities between texts, but it has limitations. While it suggests some overlap between IVS and Sanskrit, it cannot conclusively prove a connection.</p>
+<p>The importance of deciphering the Indus Valley script goes beyond linguistics, it could reshape our understanding of ancient history. What other tools or methods might help bridge this gap between symbols and meaning?</p>
+<p>Image Credits and Acknowledgment
+The images included in this post are sourced from @khoomeik, and full credit goes to their original creator, Rohan Pandey . These visuals have been used for illustrative purposes to support the ideas discussed in this article. If you are the rightful owner of any of these images and have concerns about their use, please feel free to contact me, and I will address the matter promptly, including removing the images if necessary.</p>
+<p>Jai Hind</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://thinkpade15.github.io/myblog/">M. Shatananda Sharma&#39;s Blog</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
