@@ -6,8 +6,22 @@
     <description>Recent content on M. Shatananda Sharma&#39;s Blog</description>
     <generator>Hugo -- 0.148.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Jul 2025 17:28:13 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 25 Jul 2025 20:26:21 +0530</lastBuildDate>
     <atom:link href="https://thinkpade15.github.io/myblog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First Post</title>
+      <link>https://thinkpade15.github.io/myblog/posts/first-post/</link>
+      <pubDate>Fri, 25 Jul 2025 20:26:21 +0530</pubDate>
+      <guid>https://thinkpade15.github.io/myblog/posts/first-post/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>https://thinkpade15.github.io/myblog/about/</link>
+      <pubDate>Fri, 25 Jul 2025 17:49:51 +0530</pubDate>
+      <guid>https://thinkpade15.github.io/myblog/about/</guid>
+      <description>&lt;p&gt;Hi, I&amp;rsquo;m M. Shatananda Sharma. I write about cybersecurity, philosophy, journaling, swimming, and the thoughts that cross my mind.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Tracing History Through Numbers</title>
       <link>https://thinkpade15.github.io/myblog/posts/my-first-post/</link>

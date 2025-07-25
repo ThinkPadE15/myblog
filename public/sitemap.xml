@@ -2,11 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://thinkpade15.github.io/myblog/posts/first-post/</loc>
+    <lastmod>2025-07-25T20:26:21+05:30</lastmod>
+  </url><url>
     <loc>https://thinkpade15.github.io/myblog/</loc>
     <lastmod>2025-07-25T20:26:21+05:30</lastmod>
   </url><url>
     <loc>https://thinkpade15.github.io/myblog/posts/</loc>
     <lastmod>2025-07-25T20:26:21+05:30</lastmod>
+  </url><url>
+    <loc>https://thinkpade15.github.io/myblog/about/</loc>
+    <lastmod>2025-07-25T17:49:51+05:30</lastmod>
   </url><url>
     <loc>https://thinkpade15.github.io/myblog/posts/my-first-post/</loc>
     <lastmod>2025-07-25T17:28:13+05:30</lastmod>

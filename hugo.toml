@@ -2,6 +2,7 @@ baseURL = "https://thinkpade15.github.io/myblog/"
 languageCode = "en-us"
 title = "M. Shatananda Sharma's Blog"
 theme = "PaperMod"
+publishDir = "public"  # ← Add this line here
 
 [params]
   ShowReadingTime = true
